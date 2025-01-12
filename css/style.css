@@ -1,0 +1,491 @@
+/*////////////////////////////////////////////////////*/
+/*ESTILOS RESET*/
+/*////////////////////////////////////////////////////*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    display: inline-block;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none ;
+}
+
+/*////////////////////////////////////////////////////*/
+/*ESTILOS BODY*/
+/*////////////////////////////////////////////////////*/
+
+#body{
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    max-width: 100%;
+    min-height: 100%;
+    height: 100vh;
+}
+
+/*////////////////////////////////////////////////////*/
+/*ESTILOS HEADER*/
+/*////////////////////////////////////////////////////*/
+#header{
+    max-width: 100%;
+    height: 120px;
+    z-index: 1000;
+    font-size: 20px;
+    box-sizing: border-box;
+    
+}
+
+/* ESTILOS DEL NAV */
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(60deg, rgb(76, 76, 78) 0%, rgba(2,115,115,1) 50%, rgba(4,191,173,1) 100%);
+    box-shadow: 0px 2px 5px
+}
+
+.navLogo{
+    width: 115px; /* tamaño de logo*/
+    
+}
+
+.navbar-nav{
+    margin-left: auto; /* corre los elementos a derecha*/
+}
+
+
+/*////////////////////////////////////////////////////*/
+/*ESTILOS MAIN = INDEX*/
+/*////////////////////////////////////////////////////*/
+
+.bienvenida{
+    width: 100%;
+    background: linear-gradient(to right, #000000, #c8e2fd);
+    color: white;
+    text-align: center;
+    margin: 120px 0 0 0;
+    padding: 60px 0;
+}
+
+.bienvenida h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.bienvenida p{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.bienvenida-content a{
+    margin-top: 50px;
+}
+
+.btn {
+    background-color: white;
+    color: #007bff;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+/* Tarjeta de presentación */
+
+.container-tarjeta {
+    display: flex;
+    justify-content: center;
+    margin: 10px 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 20px;
+    max-width: 90%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Imagen */
+.image-container img {
+    width: 480px;
+    height: 480px;
+    border-radius: 50%;
+    border: 2px solid #1dd4b6;
+    
+}
+
+/* Texto */
+.text-content h5 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.text-content p {
+    font-size: 1em;
+    color: #666;
+}
+
+
+
+/* Responsivo */
+@media (max-width: 900px) {
+    .card-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+/*////////////////////////////////////////////////////*/
+/*Estilos MAIN = QUIEN SOY */ 
+/*////////////////////////////////////////////////////*/
+
+
+.container-grid-skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual tamaño */
+    gap: 50px; /* Espacio entre elementos */
+    padding: 30px 0; /* Espacio interno */
+}
+
+.skill-item {
+    display: grid;
+    grid-template-columns: 60px auto; /* Primera columna para el icono, segunda para el texto */
+    align-items: center; /* Centra verticalmente */
+    gap: 10px; /* Espacio entre el icono y el texto */
+}
+
+.circle-icon {
+    width: 60px;
+    height: 60px;
+    display: grid;
+    place-items: center; /* Centra completamente la imagen */
+    background-color: #f8f9fa; /* Color de fondo */
+    border-radius: 50%; /* Hace que el div sea un círculo */
+    border: 1px solid #9c9797; /* Borde opcional */
+}
+
+.skill-name {
+    display: grid;
+    place-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/* Media queries MAIN = Qien Soy */
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+@media screen and (max-width: 1200px) {
+    .container-grid-skills {
+        grid-template-columns: 1fr; /* 1 columna */
+    }
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+
+/*////////////////////////////////////////////////////*/
+/*Estilos MAIN = MIS PROYECTOS */
+/*////////////////////////////////////////////////////*/
+
+.proyecto{
+    padding: 20px 0;
+}
+.proyecto--claro{
+    background-color: #f8f9fa;
+    
+}
+
+.proyecto--oscuro{
+    background-color: #e9eff7;
+    
+}
+.proyecto h2{
+    padding-bottom: 10px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    padding: 10px;
+}
+
+#carouselProyecto1 , #carouselProyecto2, #carouselProyecto3, #carouselProyecto4{
+    max-width: 50%;
+    flex: 1 1 50%;
+    padding: 0 20px;
+}
+
+.proyecto__descripcion{
+    flex: 1 1 50%;
+    max-width: 50%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.proyecto__boton{
+    justify-content: center;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.proyecto__boton button{
+    background-color: #a52626d3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-color: #26ac8b;
+    border-radius: 40%;
+    padding: 20px;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/* Media queries MAIN= MIS PROYECTOS*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+@media screen and (max-width: 1200px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    #carouselProyecto1 , #carouselProyecto2, #carouselProyecto3, #carouselProyecto4{
+        max-width: 100%;
+        flex: 1 1 100%;
+        padding-bottom: 20px;
+    }
+    .proyecto__descripcion{
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+/*////////////////////////////////////////////////////*/
+/* Estilos MAIN = CONTACTO */
+/*////////////////////////////////////////////////////*/
+
+.title-contacto{
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+
+/* Contenedor principal */
+
+.contenedor__form--mapa{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    width: 100%;
+}
+.contenedor__form--mapa iframe{
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Contenedor Formulario */
+
+#contactForm {
+    background: white;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+/* Estilos de los campos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Estilos del botón */
+
+#submitButton {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#submitButton:hover{
+    background-color: #0056b3;
+}
+
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/* Media queries MAIN = CONTACTO */
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+@media screen and (max-width: 1200px) {
+    .contenedor__form--mapa{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #contactForm {
+        width: 100%;
+    }
+
+    .contenedor__form--mapa iframe{
+        max-width: 100%;
+        height: 300px;
+    }
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+/*////////////////////////////////////////////////////*/
+/*Estilos MAIN = Certificaciones */
+/*////////////////////////////////////////////////////*/
+
+.container-grid-certificaciones{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 0.7fr 2fr 2fr;
+    gap: 20px 20px ;
+    grid-template-areas:
+    "title-cert title-cert title-cert title-cert title-cert title-cert"
+    "item_img--data item_img--data item_img--data item_img--tableau item_img--tableau item_img--tableau"
+    "item_img--ds1 item_img--ds1 item_img--ds1 item_img--ds2 item_img--ds2 item_img--ds2";
+    
+
+}
+
+.title-cert{ grid-area: title-cert; }
+.item_img--data{ grid-area: item_img--data; }
+.item_img--tableau{ grid-area: item_img--tableau;}
+.item_img--ds1{ grid-area: item_img--ds1;}
+.item_img--ds2{ grid-area: item_img--ds2;}
+
+.img-cert{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/* Media queries MAIN = CERTIFICACIONES */
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+@media screen and (max-width: 1200px) {
+    .container-grid-certificaciones {
+        display: grid;
+        grid-template-columns: 1fr;
+        
+        gap: 20px 20px ;
+        grid-template-areas:
+        "title-cert"
+        "item_img--data"
+        "item_img--tableau"
+        "item_img--ds1"
+        "item_img--ds2";
+    }
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*////////////////////////////////////////////////////*/
+/*ESTILOS FOOTER*/
+/*////////////////////////////////////////////////////*/
+
+.footer--color {
+    background: linear-gradient(234deg, rgba(2,115,115,1) 0%, rgba(151,157,166,1) 25%, rgba(193,212,217,1) 100%);
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/* Media queries Footer*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+@media (max-width: 768px) {
+    .footerNav li{
+        display: inline-block;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
