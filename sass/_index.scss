@@ -1,0 +1,101 @@
+/*////////////////////////////////////////////////////*/
+/*ESTILOS MAIN = INDEX*/
+/*////////////////////////////////////////////////////*/
+
+.bienvenida{
+    width: 100%;
+    background: linear-gradient(to right, #000000, #c8e2fd);
+    color: white;
+    text-align: center;
+    margin: 120px 0 0 0;
+    padding: 60px 0;
+}
+
+.bienvenida h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.bienvenida p{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.bienvenida-content a{
+    margin-top: 50px;
+}
+
+.btn {
+    background-color: white;
+    color: #007bff;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+/* Tarjeta de presentación */
+
+.container-tarjeta {
+    display: flex;
+    justify-content: center;
+    margin: 10px 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 20px;
+    max-width: 90%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Imagen */
+.image-container img {
+    width: 480px;
+    height: 480px;
+    border-radius: 50%;
+    border: 2px solid #1dd4b6;
+    
+}
+
+/* Texto */
+.text-content h5 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.text-content p {
+    font-size: 1em;
+    color: #666;
+}
+
+
+
+/* Responsivo */
+@media (max-width: 900px) {
+    .card-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container img {
+        width: 150px;
+        height: 150px;
+    }
+}

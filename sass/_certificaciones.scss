@@ -1,0 +1,51 @@
+/*////////////////////////////////////////////////////*/
+/*Estilos MAIN = Certificaciones */
+/*////////////////////////////////////////////////////*/
+
+.container-grid-certificaciones{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 0.7fr 2fr 2fr;
+    gap: 20px 20px ;
+    grid-template-areas:
+    "title-cert title-cert title-cert title-cert title-cert title-cert"
+    "item_img--data item_img--data item_img--data item_img--tableau item_img--tableau item_img--tableau"
+    "item_img--ds1 item_img--ds1 item_img--ds1 item_img--ds2 item_img--ds2 item_img--ds2";
+    
+
+}
+
+.title-cert{ grid-area: title-cert; }
+.item_img--data{ grid-area: item_img--data; }
+.item_img--tableau{ grid-area: item_img--tableau;}
+.item_img--ds1{ grid-area: item_img--ds1;}
+.item_img--ds2{ grid-area: item_img--ds2;}
+
+.img-cert{
+    width: 100%;
+    height: auto; /* Mantiene la proporcion de la imagen */
+    object-fit: contain; /* Ajusta la imagen al contenedor */
+    border-radius: 10px;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/* Media queries MAIN = CERTIFICACIONES */
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+@media screen and (max-width: 1200px) {
+    .container-grid-certificaciones {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto; /*Permite a las imagenes conservar su tamaño*/
+        
+        gap: 20px 20px ;
+        grid-template-areas:
+        "title-cert"
+        "item_img--data"
+        "item_img--tableau"
+        "item_img--ds1"
+        "item_img--ds2";
+    }
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/

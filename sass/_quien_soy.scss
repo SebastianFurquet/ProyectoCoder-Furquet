@@ -1,0 +1,52 @@
+/*////////////////////////////////////////////////////*/
+/*Estilos MAIN = QUIEN SOY */ 
+/*////////////////////////////////////////////////////*/
+
+
+.container-grid-skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual tamaño */
+    gap: 50px; /* Espacio entre elementos */
+    padding: 30px 0; /* Espacio interno */
+}
+
+.skill-item {
+    display: grid;
+    grid-template-columns: 60px auto; /* Primera columna para el icono, segunda para el texto */
+    align-items: center; /* Centra verticalmente */
+    gap: 10px; /* Espacio entre el icono y el texto */
+}
+
+.circle-icon {
+    width: 60px;
+    height: 60px;
+    display: grid;
+    place-items: center; /* Centra completamente la imagen */
+    background-color: #f8f9fa; /* Color de fondo */
+    border-radius: 50%; /* Hace que el div sea un círculo */
+    border: 1px solid #9c9797; /* Borde opcional */
+}
+
+.skill-name {
+    display: grid;
+    place-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/* Media queries MAIN = Qien Soy */
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+@media screen and (max-width: 1200px) {
+    .container-grid-skills {
+        grid-template-columns: 1fr; /* 1 columna */
+    }
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/

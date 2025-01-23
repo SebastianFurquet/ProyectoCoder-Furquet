@@ -1,0 +1,17 @@
+/* ESTILOS DEL NAV */
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(60deg, rgb(76, 76, 78) 0%, rgba(2,115,115,1) 50%, rgba(4,191,173,1) 100%);
+    box-shadow: 0px 2px 5px
+}
+
+.navLogo{
+    width: 115px; /* tamaño de logo*/
+    
+}
+
+.navbar-nav{
+    margin-left: auto; /* corre los elementos a derecha*/
+}
