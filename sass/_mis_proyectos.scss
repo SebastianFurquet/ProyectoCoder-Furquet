@@ -1,38 +1,73 @@
 /*////////////////////////////////////////////////////*/
-/*Estilos MAIN = MIS PROYECTOS */
+/* Estilos MAIN = MIS PROYECTOS */
 /*////////////////////////////////////////////////////*/
+.title-seb {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
 
-.proyecto{
+.title-seb p {
+    font-size: 1.3rem;
+}
+
+.proyecto {
     padding: 20px 0;
 }
-.proyecto--claro{
+
+.proyecto--claro {
     background-color: #f8f9fa;
-    
 }
 
-.proyecto--oscuro{
+.proyecto--oscuro {
     background-color: #e9eff7;
-    
 }
-.proyecto h2{
+
+.proyecto h2 {
     padding-bottom: 10px;
 }
 
-.container{
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: start;
     padding: 10px;
+    min-height: 100%;
 }
 
-#carouselProyecto1 , #carouselProyecto2, #carouselProyecto3, #carouselProyecto4{
+#carouselProyecto1,
+#carouselProyecto2,
+#carouselProyecto3,
+#carouselProyecto4 {
     max-width: 50%;
     flex: 1 1 50%;
     padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px; /* se centraliza la altura aca */
 }
 
-.proyecto__descripcion{
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Asegura que el carrusel ocupe todo su contenedor */
+}
+
+.carousel-item {
+    height: 100%; /* Hace que cada slide del carrusel ocupe el 100% del contenedor */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%; /* Ajusta la altura de la imagen para ocupar todo el contenedor */
+    object-fit: cover; /* Escala las imágenes para que cubran todo el espacio sin deformarse */
+    object-position: center; /* Centra la imagen dentro del contenedor */
+}
+
+.proyecto__descripcion {
     flex: 1 1 50%;
     max-width: 50%;
     padding: 0 20px;
@@ -40,16 +75,15 @@
     text-align: justify;
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
 }
 
-.proyecto__boton{
-    justify-content: center;
+.proyecto__boton {
     padding: 10px 20px;
     text-align: center;
 }
 
-.proyecto__boton button{
+.proyecto__boton button {
     background-color: #a52626d3;
     color: white;
     border: none;
@@ -59,39 +93,34 @@
     font-size: 16px;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon{
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
     background-color: #26ac8b;
     border-radius: 40%;
     padding: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-/* Media queries MAIN= MIS PROYECTOS*/
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-
-@media screen and (max-width: 1200px){
-    .container{
+/*////////////////////////////////////////////////////*/
+/* Media Queries */
+/*////////////////////////////////////////////////////*/
+@media screen and (max-width: 1200px) {
+    .container {
         flex-direction: column;
         align-items: center;
     }
-    #carouselProyecto1 , #carouselProyecto2, #carouselProyecto3, #carouselProyecto4{
+
+    #carouselProyecto1,
+    #carouselProyecto2,
+    #carouselProyecto3,
+    #carouselProyecto4 {
         max-width: 100%;
         flex: 1 1 100%;
         padding-bottom: 20px;
     }
-    .proyecto__descripcion{
+
+    .proyecto__descripcion {
         flex: 1 1 100%;
         max-width: 100%;
     }
 }
 
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/

@@ -2,6 +2,15 @@
 /*Estilos MAIN = QUIEN SOY */ 
 /*////////////////////////////////////////////////////*/
 
+.title-quien_soy {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    p {
+        font-size: 1.3rem;
+    }
+}
+
 
 .container-grid-skills {
     display: grid;
@@ -230,6 +239,47 @@
     padding-top: 5px;
 }
 
+/*ANIMACIONES*/
+
+/*Animacion de circulos*/
+
+.rotate-scale-up:hover {
+	-webkit-animation: rotate-scale-up 0.65s linear both;
+	        animation: rotate-scale-up 0.65s linear both;
+}
+/**
+ * ----------------------------------------
+ * animation rotate-scale-up
+ * ----------------------------------------
+ */
+@-webkit-keyframes rotate-scale-up {
+    0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+    }
+    50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+            transform: scale(2) rotateZ(180deg);
+    }
+    100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+    }
+}
+@keyframes rotate-scale-up {
+    0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+    }
+    50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+            transform: scale(2) rotateZ(180deg);
+    }
+    100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+    }
+}
 
 /*Animacion tarjetas*/
 
